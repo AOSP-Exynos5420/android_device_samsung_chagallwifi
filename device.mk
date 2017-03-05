@@ -39,3 +39,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/samsung/chagallwifi/chagallwifi-vendor.mk)
+
+# Assert for flash script
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.assert.device=chagallwifi
+
+# setup dalvik vm configs.
+$(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, vendor/samsung/klimtwifi/klimtwifi-vendor.mk)
+>>>>>>> 62bc9a6... Set the Assert for flash script
