@@ -21,6 +21,11 @@ PRODUCT_COPY_FILES += \
     device/samsung/chagallwifi/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
     device/samsung/chagallwifi/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# GPS
+PRODUCT_COPY_FILES += \
+    device/samsung/klimtwifi/configs/gps/gps.conf:system/etc/gps.conf \
+    device/samsung/klimtwifi/configs/gps/gps.xml:system/etc/gps.xml
+
 # This is a tablet
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
