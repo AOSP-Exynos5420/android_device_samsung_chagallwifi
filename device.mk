@@ -16,13 +16,12 @@
 
 $(call inherit-product, device/samsung/chagall-klimt-common/device.mk)
 
+# Audio
 PRODUCT_COPY_FILES += \
-    device/samsung/chagallwifi/audio/audio_policy.conf:system/etc/audio_policy.conf
+    device/samsung/chagallwifi/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
+    device/samsung/chagallwifi/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
-PRODUCT_COPY_FILES += \
-    device/samsung/chagallwifi/audio/mixer_paths.xml:system/etc/mixer_paths.xml
-
-# These are the hardware-specific features
+# This is a tablet
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml
 
